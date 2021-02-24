@@ -6,6 +6,8 @@ if(qtd<1):
         if not(qtd<1):
             break
 
+def converter(number):
+    return number*-1
 
 number=[]
 
@@ -15,14 +17,14 @@ for i in range(qtd):
         print("This position in list had the negative number converted to be a positive number")
         print("Pre-converted number: ", number[i])
 
-        number[i]=number[i]*-1
+        number[i]=converter(number[i])
         
         print("Converted number: ", number[i])
     elif(number[i]>0):
         print("This position in list had the positive number converted to be a negative number")
         print("Pre-converted number: ", number[i])
 
-        number[i]=number[i]*-1
+        number[i]=converter(number[i])
 
         print("Converted number: ", number[i])
     else: 
